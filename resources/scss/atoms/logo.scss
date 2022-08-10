@@ -1,16 +1,30 @@
 .website-logo {
-    @include x("width", 29);
-    @include x("height", 35);
     display: block;
     position: fixed;
-    @include x("top", 60);
+    @include x("top", 50);
     @include x("left", 80);
     z-index: 10;
-    background-image: url("http://xdev-files.test/svg/black-logo.svg");
+    // background-image: url("http://creativenebula.co.uk/svg/black-logo.svg");
+    display: flex;
+    align-items: center;
+
+    svg {
+        @include x("width", 55);
+        @include x("height", 61);
+        fill: var(--color-black);
+    }
+
+    .logo-text {
+        display: flex;
+        flex-direction: column;
+        @include x("line-height", 25);
+        @include x("margin-left", 5);
+        justify-self: center;
+    }
 }
 
 .dark {
     .website-logo {
-        background-image: url("http://xdev-files.test/svg/white-logo.svg");
+        // background-image: url("http://creativenebula.co.uk/svg/white-logo.svg");
     }
 }

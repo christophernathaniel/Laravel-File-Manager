@@ -72,34 +72,34 @@
 
 .space {
     .triangle {
-        background-image: url("http://xdev-files.test/pages/space/rectangle.png");
+        background-image: url("http://creativenebula.co.uk/pages/space/rectangle.png");
     }
     .man {
-        background-image: url("http://xdev-files.test/pages/space/spaceman.png");
+        background-image: url("http://creativenebula.co.uk/pages/space/spaceman.png");
     }
     &.dark {
         body {
             background-color: var(--color-secondary);
         }
         .triangle {
-            background-image: url("http://xdev-files.test/pages/space/rectangle.png");
+            background-image: url("http://creativenebula.co.uk/pages/space/rectangle.png");
         }
     }
 }
 
 .ocean {
     .triangle {
-        background-image: url("http://xdev-files.test/pages/navigator/rectangle.png");
+        background-image: url("http://creativenebula.co.uk/pages/navigator/rectangle.png");
     }
     .man {
-        background-image: url("http://xdev-files.test/pages/navigator/diver.png");
+        background-image: url("http://creativenebula.co.uk/pages/navigator/diver.png");
     }
     &.dark {
         body {
             background-color: var(--color-secondary);
         }
         .triangle {
-            background-image: url("http://xdev-files.test/pages/navigator/rectangle.png");
+            background-image: url("http://creativenebula.co.uk/pages/navigator/rectangle.png");
         }
     }
 }
