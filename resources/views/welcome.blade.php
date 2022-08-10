@@ -45,9 +45,22 @@
                 <p class="fs-16 metropolis-thin fw-100 second">We believe having headspace to achieve your creative goals... Having worked with clients on web projects from ideation to launch, I have valuable experience in the design and development process.</p>
               </div>
 
-                <div class="phone-view one can-parallax parallax-three"></div>
-                <div class="phone-view two can-parallax parallax-four"></div>
-                <div class="phone-view three can-parallax parallax-five"></div>
+                <div class="phone-view one can-parallax parallax-three">
+                    <div class="frame"></div>
+                </div>
+                <div class="phone-view two can-parallax parallax-four">
+                     <div class="frame"></div>
+                    <div class="code-block-1"></div>
+                    <div class="code-block-2"></div>
+                    <div class="code-block-3"></div>
+                </div>
+                <div class="phone-view three can-parallax parallax-five">
+                    <div class="frame"></div>
+                    <div class="phone-view-bg"></div>
+                    <div class="code-block-1"></div>
+                    <div class="code-block-2"></div>
+                    <div class="code-block-3"></div>
+                </div>
               <footer><div class="fs-24 fw-600 metropolis">creating.</div><div class="fs-24 fw-600 metropolis">programming.</div></footer>
         </section>
         <section class="block--0004 view-frame window-width can-intersect" scroll-point>

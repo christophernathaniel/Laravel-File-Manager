@@ -64,6 +64,10 @@ Alpine.store("setupModal", {
     },
 });
 
+setTimeout(() => {
+    document.querySelector(".loading-view").classList.add("done");
+}, 500);
+
 // Alpine.store("darkMode", {
 //     on() {
 //         this.isDark = true;

@@ -31,27 +31,125 @@
             @include x("top", 310);
             left: 50%;
             transform: translateX(-50%);
+
+            .code-block-1 {
+                display: block;
+                @include x("width", 359.2);
+                @include x("height", 225.93);
+                background-image: url("http://xdev-files.test/svg/appstack/app-stack-1.svg");
+                background-repeat: no-repeat;
+                background-size: cover;
+                position: absolute;
+                @include x("top", 100);
+                @include x("left", 150);
+                z-index: 11;
+            }
+
+            .code-block-2 {
+                display: block;
+                @include x("width", 359.2);
+                @include x("height", 148.27);
+                background-image: url("http://xdev-files.test/svg/appstack/app-stack-2.svg");
+                background-repeat: no-repeat;
+                background-size: cover;
+                position: absolute;
+                @include x("top", 320);
+                @include x("left", -40);
+                z-index: 11;
+            }
+
+            .code-block-3 {
+                display: block;
+                @include x("width", 359.2);
+                @include x("height", 176.06);
+                background-image: url("http://xdev-files.test/svg/appstack/app-stack-3.svg");
+                background-repeat: no-repeat;
+                background-size: cover;
+                position: absolute;
+                @include x("top", 500);
+                @include x("left", 150);
+                z-index: 11;
+            }
         }
 
         &.three {
             @include x("top", 390);
             left: 77%;
             transform: translateX(-50%);
+
+            .phone-view-bg {
+                @include x("width", 400);
+                @include x("height", 759);
+                @include x("top", 40);
+                z-index: 5;
+                position: absolute;
+                display: block;
+                background-image: url("http://xdev-files.test/pages/space/app-background.png");
+            }
+
+            .code-block-1 {
+                display: block;
+                @include x("width", 359.2);
+                @include x("height", 225.93);
+                background-image: url("http://xdev-files.test/svg/appstack/app-stack-1.svg");
+                background-repeat: no-repeat;
+                background-size: cover;
+                position: absolute;
+                @include x("bottom", 100);
+
+                z-index: 11;
+            }
+
+            .code-block-2 {
+                display: block;
+                @include x("width", 359.2);
+                @include x("height", 148.27);
+                background-image: url("http://xdev-files.test/svg/appstack/app-stack-2.svg");
+                background-repeat: no-repeat;
+                background-size: cover;
+                position: absolute;
+                @include x("bottom", 150);
+
+                z-index: 11;
+            }
+
+            .code-block-3 {
+                display: block;
+                @include x("width", 359.2);
+                @include x("height", 176.06);
+                background-image: url("http://xdev-files.test/svg/appstack/app-stack-3.svg");
+                background-repeat: no-repeat;
+                background-size: cover;
+                position: absolute;
+                @include x("bottom", 200);
+
+                z-index: 11;
+            }
         }
     }
 }
 
 .phone-view {
+    position: absolute;
     @include x("width", 487);
     @include x("height", 850);
-    display: block;
-    position: absolute;
-    background-image: url("http://xdev-files.test/svg/PhoneFrame-Dark.svg");
-    background-size: contain;
+    z-index: 10;
+
+    .frame {
+        @include x("width", 487);
+        @include x("height", 850);
+        z-index: 6;
+        display: block;
+        position: absolute;
+        background-image: url("http://xdev-files.test/svg/PhoneFrame-Dark.svg");
+        background-size: contain;
+    }
 }
 
 .dark {
     .phone-view {
-        background-image: url("http://xdev-files.test/svg/PhoneFrame-Light.svg");
+        .frame {
+            background-image: url("http://xdev-files.test/svg/PhoneFrame-Light.svg");
+        }
     }
 }
