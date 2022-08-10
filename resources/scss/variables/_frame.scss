@@ -1,0 +1,43 @@
+.view-frame {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.inner-frame {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: block;
+}
+
+.preventScroll {
+    overscroll-behavior: none;
+}
+
+html {
+    height: 100vh;
+    overflow: hidden;
+}
+
+.parent-frame {
+    height: 100vh;
+    scroll-snap-type: y mandatory;
+    overflow: scroll;
+}
+
+[scroll-point] {
+    scroll-snap-align: start;
+}
+
+.frame-overlay {
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}

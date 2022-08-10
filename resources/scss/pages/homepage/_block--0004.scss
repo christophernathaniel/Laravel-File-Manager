@@ -1,0 +1,842 @@
+.block--0004 {
+    > div {
+        display: flex;
+        justify-content: center;
+        left: 0;
+        right: 0;
+    }
+
+    .first {
+        color: var(--color-fire-one);
+        @include x("top", 440);
+        position: absolute;
+        z-index: 0;
+    }
+
+    .second {
+        color: var(--color-fire-two);
+        @include x("top", 620);
+        position: absolute;
+        z-index: 10;
+        @include x("max-width", 700);
+        text-align: center;
+    }
+
+    .third {
+        color: var(--color-fire-three);
+        @include x("top", 730);
+        position: absolute;
+        z-index: 10;
+        @include x("max-width", 600);
+        text-align: center;
+    }
+}
+
+.alien-spaceship {
+    @include x("top", 100);
+    @include x("width", 292);
+    @include x("height", 319);
+    left: 50%;
+    display: block;
+    position: absolute;
+    background-image: url("http://xdev-files.test/pages/space/AlienSpaceship.svg");
+    background-size: contain;
+
+    .speed-group {
+        position: relative;
+    }
+
+    .speed {
+        position: absolute;
+    }
+
+    .speed1 {
+        -webkit-animation: speedone 1s ease infinite;
+        @include x("width", 186.9);
+        @include x("height", 43);
+        @include x("left", -386);
+        @include x("top", 20);
+        position: absolute;
+        background-image: url("http://xdev-files.test/pages/space/speed1.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    .speed2 {
+        -webkit-animation: speedtwo 1s ease-out infinite;
+        @include x("width", 181.63);
+        @include x("height", 36.27);
+        @include x("left", -586);
+        @include x("top", 90);
+        position: absolute;
+        background-image: url("http://xdev-files.test/pages/space/speed2.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    .speed3 {
+        -webkit-animation: speedthree 1s ease-out infinite;
+        @include x("width", 181.63);
+        @include x("height", 36.27);
+        @include x("left", -586);
+        @include x("top", 190);
+        position: absolute;
+        background-image: url("http://xdev-files.test/pages/space/speed3.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    .speed4 {
+        -webkit-animation: speedfour 1s ease-out infinite;
+        @include x("width", 186.9);
+        @include x("height", 53);
+        @include x("left", -386);
+        @include x("top", 240);
+        position: absolute;
+        background-image: url("http://xdev-files.test/pages/space/speed4.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+}
+
+@keyframes speedone {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes speedtwo {
+    0% {
+        opacity: 0;
+    }
+    25% {
+        opacity: 1;
+    }
+    33% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes speedthree {
+    0% {
+        opacity: 0;
+    }
+    25% {
+        opacity: 1;
+    }
+    33% {
+        opacity: 0;
+    }
+    80% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes speedfour {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.soundWave-container {
+    display: flex;
+    justify-content: space-between;
+    height: 64px;
+    --boxSize: 3px;
+    --gutter: 2px;
+    width: calc((var(--boxSize) + var(--gutter)) * 100);
+    @include x("top", 230);
+    position: absolute;
+    z-index: 10;
+}
+
+.soundWave {
+    transform: scaleY(4);
+    height: 100%;
+    width: var(--boxSize);
+    background: #12e2dc;
+    border-radius: 8px;
+}
+
+.can-animate {
+    .soundWave {
+        animation-duration: 1.2s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+    }
+}
+
+@keyframes quiet {
+    0% {
+        transform: scaleY(0.12);
+    }
+    25% {
+        transform: scaleY(0.1);
+    }
+    50% {
+        transform: scaleY(0.11);
+    }
+    75% {
+        transform: scaleY(0.1);
+    }
+    100% {
+        transform: scaleY(0.12);
+    }
+}
+
+@keyframes quiet1 {
+    0% {
+        transform: scaleY(0.22);
+    }
+    25% {
+        transform: scaleY(0.2);
+    }
+    50% {
+        transform: scaleY(0.21);
+    }
+    75% {
+        transform: scaleY(0.2);
+    }
+    100% {
+        transform: scaleY(0.22);
+    }
+}
+
+@keyframes quiet2 {
+    0% {
+        transform: scaleY(0.35);
+    }
+    25% {
+        transform: scaleY(0.3);
+    }
+    50% {
+        transform: scaleY(0.35);
+    }
+    75% {
+        transform: scaleY(0.3);
+    }
+    100% {
+        transform: scaleY(0.35);
+    }
+}
+
+@keyframes quiet3 {
+    0% {
+        transform: scaleY(0.45);
+    }
+    15% {
+        transform: scaleY(0.4);
+    }
+    50% {
+        transform: scaleY(0.45);
+    }
+    65% {
+        transform: scaleY(0.4);
+    }
+    100% {
+        transform: scaleY(0.45);
+    }
+}
+
+@keyframes normal {
+    0% {
+        transform: scaleY(0.55);
+    }
+    25% {
+        transform: scaleY(0.8);
+    }
+    50% {
+        transform: scaleY(0.55);
+    }
+    75% {
+        transform: scaleY(0.8);
+    }
+    100% {
+        transform: scaleY(0.55);
+    }
+}
+
+@keyframes normal1 {
+    0% {
+        transform: scaleY(0.65);
+    }
+    22% {
+        transform: scaleY(0.9);
+    }
+    40% {
+        transform: scaleY(0.65);
+    }
+    80% {
+        transform: scaleY(0.8);
+    }
+    100% {
+        transform: scaleY(0.65);
+    }
+}
+
+@keyframes normal2 {
+    0% {
+        transform: scaleY(1.5);
+    }
+    22% {
+        transform: scaleY(1.9);
+    }
+    40% {
+        transform: scaleY(1.65);
+    }
+    80% {
+        transform: scaleY(1.8);
+    }
+    100% {
+        transform: scaleY(1.65);
+    }
+}
+
+@keyframes normal3 {
+    0% {
+        transform: scaleY(2.5);
+    }
+    22% {
+        transform: scaleY(2.1);
+    }
+    40% {
+        transform: scaleY(2.65);
+    }
+    80% {
+        transform: scaleY(2);
+    }
+    100% {
+        transform: scaleY(2.65);
+    }
+}
+
+@keyframes normal4 {
+    0% {
+        transform: scaleY(2.9);
+    }
+    22% {
+        transform: scaleY(2);
+    }
+    60% {
+        transform: scaleY(2.25);
+    }
+    80% {
+        transform: scaleY(2.2);
+    }
+    100% {
+        transform: scaleY(2.9);
+    }
+}
+
+@keyframes normal5 {
+    0% {
+        transform: scaleY(3);
+    }
+    22% {
+        transform: scaleY(2.4);
+    }
+    60% {
+        transform: scaleY(2.65);
+    }
+    80% {
+        transform: scaleY(2.5);
+    }
+    100% {
+        transform: scaleY(3);
+    }
+}
+
+@keyframes loud {
+    0% {
+        transform: scaleY(3);
+    }
+    22% {
+        transform: scaleY(4.5);
+    }
+    60% {
+        transform: scaleY(3.65);
+    }
+    80% {
+        transform: scaleY(4);
+    }
+    100% {
+        transform: scaleY(3);
+    }
+}
+
+@keyframes loud1 {
+    0% {
+        transform: scaleY(3.4);
+    }
+    22% {
+        transform: scaleY(4);
+    }
+    60% {
+        transform: scaleY(3.75);
+    }
+    80% {
+        transform: scaleY(4);
+    }
+    100% {
+        transform: scaleY(3.4);
+    }
+}
+
+@keyframes loud2 {
+    0% {
+        transform: scaleY(3.7);
+    }
+    22% {
+        transform: scaleY(4);
+    }
+    60% {
+        transform: scaleY(3.85);
+    }
+    80% {
+        transform: scaleY(4);
+    }
+    100% {
+        transform: scaleY(3.7);
+    }
+}
+
+@keyframes loud3 {
+    0% {
+        transform: scaleY(4);
+    }
+    25% {
+        transform: scaleY(4.2);
+    }
+    50% {
+        transform: scaleY(4);
+    }
+    75% {
+        transform: scaleY(4.2);
+    }
+    100% {
+        transform: scaleY(4);
+    }
+}
+
+.wave0 {
+    animation-name: quiet;
+}
+
+.wave1 {
+    animation-name: quiet;
+}
+
+.wave2 {
+    animation-name: quiet1;
+}
+
+.wave3 {
+    animation-name: quiet;
+}
+
+.wave4 {
+    animation-name: quiet;
+}
+
+.wave5 {
+    animation-name: quiet1;
+}
+
+.wave6 {
+    animation-name: quiet;
+}
+
+.wave7 {
+    animation-name: quiet1;
+}
+
+.wave8 {
+    animation-name: quiet1;
+}
+
+.wave9 {
+    animation-name: quiet2;
+}
+
+.wave10 {
+    animation-name: quiet1;
+}
+
+.wave11 {
+    animation-name: quiet2;
+}
+
+.wave12 {
+    animation-name: quiet3;
+}
+
+.wave13 {
+    animation-name: normal;
+}
+
+.wave14 {
+    animation-name: quiet3;
+}
+
+.wave15 {
+    animation-name: normal;
+}
+
+.wave16 {
+    animation-name: normal1;
+}
+
+.wave17 {
+    animation-name: quiet2;
+}
+
+.wave18 {
+    animation-name: quiet3;
+}
+
+.wave19 {
+    animation-name: normal;
+}
+
+.wave20 {
+    animation-name: normal1;
+}
+
+.wave21 {
+    animation-name: quiet2;
+}
+
+.wave22 {
+    animation-name: normal2;
+}
+
+.wave23 {
+    animation-name: normal3;
+}
+
+.wave24 {
+    animation-name: normal1;
+}
+
+.wave25 {
+    animation-name: normal3;
+}
+
+.wave26 {
+    animation-name: normal2;
+}
+
+.wave27 {
+    animation-name: normal4;
+}
+
+.wave28 {
+    animation-name: normal5;
+}
+
+.wave29 {
+    animation-name: normal3;
+}
+
+.wave30 {
+    animation-name: normal4;
+}
+
+.wave31 {
+    animation-name: normal5;
+}
+
+.wave32 {
+    animation-name: loud;
+}
+
+.wave33 {
+    animation-name: loud1;
+}
+
+.wave34 {
+    animation-name: loud;
+}
+
+.wave35 {
+    animation-name: loud2;
+}
+
+.wave36 {
+    animation-name: normal4;
+}
+
+.wave37 {
+    animation-name: normal3;
+}
+
+.wave38 {
+    animation-name: loud;
+}
+
+.wave39 {
+    animation-name: loud2;
+}
+
+.wave40 {
+    animation-name: loud1;
+}
+
+.wave41 {
+    animation-name: loud3;
+}
+
+.wave42 {
+    animation-name: loud;
+}
+
+.wave43 {
+    animation-name: loud2;
+}
+
+.wave44 {
+    animation-name: loud;
+}
+
+.wave45 {
+    animation-name: loud1;
+}
+
+.wave46 {
+    animation-name: loud2;
+}
+
+.wave47 {
+    animation-name: loud3;
+}
+
+.wave48 {
+    animation-name: loud1;
+}
+
+.wave49 {
+    animation-name: loud2;
+}
+
+.wave50 {
+    animation-name: loud4;
+}
+
+/* Split */
+
+.wave99 {
+    animation-name: quiet;
+}
+
+.wave98 {
+    animation-name: quiet;
+}
+
+.wave97 {
+    animation-name: quiet1;
+}
+
+.wave96 {
+    animation-name: quiet;
+}
+
+.wave95 {
+    animation-name: quiet;
+}
+
+.wave94 {
+    animation-name: quiet1;
+}
+
+.wave93 {
+    animation-name: quiet;
+}
+
+.wave92 {
+    animation-name: quiet1;
+}
+
+.wave91 {
+    animation-name: quiet1;
+}
+
+.wave90 {
+    animation-name: quiet2;
+}
+
+.wave89 {
+    animation-name: quiet1;
+}
+
+.wave88 {
+    animation-name: quiet2;
+}
+
+.wave87 {
+    animation-name: quiet3;
+}
+
+.wave86 {
+    animation-name: normal;
+}
+
+.wave85 {
+    animation-name: quiet3;
+}
+
+.wave84 {
+    animation-name: normal;
+}
+
+.wave83 {
+    animation-name: normal1;
+}
+
+.wave82 {
+    animation-name: quiet2;
+}
+
+.wave81 {
+    animation-name: quiet3;
+}
+
+.wave80 {
+    animation-name: normal;
+}
+
+.wave79 {
+    animation-name: normal1;
+}
+
+.wave78 {
+    animation-name: quiet2;
+}
+
+.wave77 {
+    animation-name: normal2;
+}
+
+.wave76 {
+    animation-name: normal3;
+}
+
+.wave75 {
+    animation-name: normal1;
+}
+
+.wave74 {
+    animation-name: normal3;
+}
+
+.wave73 {
+    animation-name: normal2;
+}
+
+.wave72 {
+    animation-name: normal4;
+}
+
+.wave71 {
+    animation-name: normal5;
+}
+
+.wave70 {
+    animation-name: normal3;
+}
+
+.wave69 {
+    animation-name: normal4;
+}
+
+.wave68 {
+    animation-name: normal5;
+}
+
+.wave67 {
+    animation-name: loud;
+}
+
+.wave66 {
+    animation-name: loud1;
+}
+
+.wave65 {
+    animation-name: loud;
+}
+
+.wave64 {
+    animation-name: loud2;
+}
+
+.wave63 {
+    animation-name: normal4;
+}
+
+.wave62 {
+    animation-name: normal3;
+}
+
+.wave61 {
+    animation-name: loud;
+}
+
+.wave60 {
+    animation-name: loud2;
+}
+
+.wave59 {
+    animation-name: loud1;
+}
+
+.wave58 {
+    animation-name: loud3;
+}
+
+.wave57 {
+    animation-name: loud;
+}
+
+.wave56 {
+    animation-name: loud2;
+}
+
+.wave55 {
+    animation-name: loud;
+}
+
+.wave54 {
+    animation-name: loud1;
+}
+
+.wave53 {
+    animation-name: loud2;
+}
+
+.wave52 {
+    animation-name: loud3;
+}
+
+.wave51 {
+    animation-name: loud1;
+}

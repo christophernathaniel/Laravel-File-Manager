@@ -1,0 +1,65 @@
+.theme-switcher-modal {
+    position: fixed;
+    z-index: 200;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-white);
+    backdrop-filter: blur(10px);
+
+    .single-view {
+        position: relative;
+        background-color: var(--color-ui-primary);
+        @include x("width", 1300);
+        @include x("min-height", 730);
+        @include x("border-radius", 12);
+        @include x("padding-top", 200);
+        @include x("padding-bottom", 40);
+        box-shadow: 0 23px 24px rgb(0 0 0 / 15%);
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .title-block {
+        text-align: center;
+        @include x("margin-bottom", 50);
+    }
+
+    .choice-group {
+        display: flex;
+        @include x("gap", 20);
+    }
+
+    .preview {
+        @include x("width", 144);
+        @include x("height", 90);
+        @include x("border-radius", 12);
+        outline-width: 4px;
+
+        display: block;
+        background-color: var(--color-ui-white);
+    }
+
+    .name {
+        @include x("margin-top", 20);
+        text-align: center;
+        width: 100%;
+        display: block;
+    }
+
+    .btn.next {
+        @include x("margin-top", 40);
+    }
+
+    .btn.back {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+    }
+}

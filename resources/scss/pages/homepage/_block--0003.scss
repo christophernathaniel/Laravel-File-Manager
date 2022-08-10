@@ -1,0 +1,57 @@
+.block--0003 {
+    > div {
+        display: flex;
+        justify-content: center;
+        left: 0;
+        right: 0;
+    }
+
+    .first {
+        @include x("top", 50);
+        position: absolute;
+        z-index: 0;
+    }
+
+    .second {
+        @include x("top", 210);
+        position: absolute;
+        z-index: 10;
+        @include x("max-width", 600);
+        text-align: center;
+    }
+
+    .phone-view {
+        &.one {
+            @include x("top", 480);
+            left: 23%;
+            transform: translateX(-50%);
+        }
+
+        &.two {
+            @include x("top", 310);
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        &.three {
+            @include x("top", 390);
+            left: 77%;
+            transform: translateX(-50%);
+        }
+    }
+}
+
+.phone-view {
+    @include x("width", 487);
+    @include x("height", 850);
+    display: block;
+    position: absolute;
+    background-image: url("http://xdev-files.test/svg/PhoneFrame-Dark.svg");
+    background-size: contain;
+}
+
+.dark {
+    .phone-view {
+        background-image: url("http://xdev-files.test/svg/PhoneFrame-Light.svg");
+    }
+}

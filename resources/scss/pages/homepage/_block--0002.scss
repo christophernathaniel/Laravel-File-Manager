@@ -1,0 +1,43 @@
+.block--0002 {
+    > div {
+        display: flex;
+        justify-content: center;
+        left: 0;
+        right: 0;
+    }
+
+    .first {
+        @include x("bottom", 230);
+        position: absolute;
+        z-index: 0;
+    }
+
+    .second {
+        @include x("bottom", 150);
+        position: absolute;
+        z-index: 10;
+        @include x("max-width", 600);
+        text-align: center;
+    }
+}
+
+.space {
+    &.dark {
+        .block--0002 {
+            background-size: cover;
+            background-image: url("http://xdev-files.test/pages/space/starry-background.png");
+        }
+    }
+}
+
+.dl--6 {
+    .triangle {
+        transform: translateX(-50%) translateY(-50%) scale(0.68);
+    }
+}
+
+.dl--11 {
+    .triangle {
+        top: -50%;
+    }
+}

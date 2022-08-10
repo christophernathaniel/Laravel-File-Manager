@@ -14,7 +14,7 @@
         @livewireStyles
 
         <!-- Scripts -->
-        @vite(['resources/css/app.css', 'resources/js/app.js'])
+        @vite(['resources/css/app.css', 'resources/js/app.js', 'resources/scss/app.scss'])
 
         <!-- Filepond stylesheet -->
         <link href="https://unpkg.com/filepond/dist/filepond.css" rel="stylesheet">

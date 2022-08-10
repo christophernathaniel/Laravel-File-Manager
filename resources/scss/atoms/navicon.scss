@@ -1,0 +1,18 @@
+.atom-navicon {
+    contain: layout;
+    display: flex;
+    flex-direction: column;
+    z-index: 200;
+    position: fixed;
+    @include x("top", 60);
+    @include x("right", 80);
+
+    span {
+        @include x("width", 30);
+        height: 2px;
+        border-radius: 100px;
+        @include x("margin-bottom", 8);
+        background-color: var(--color-primary);
+        display: block;
+    }
+}

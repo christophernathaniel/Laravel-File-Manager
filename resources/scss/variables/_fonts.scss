@@ -1,0 +1,201 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@700&family=Roboto:wght@100;300;700&display=swap");
+
+@font-face {
+    font-family: "Metropolis-bold"; /*a name to be used later*/
+    src: url("../fonts/Metropolis/WOFF2/Metropolis-Bold.woff2"); /*URL to font*/
+}
+
+@font-face {
+    font-family: "Metropolis-medium"; /*a name to be used later*/
+    src: url("../fonts/Metropolis/WOFF2/Metropolis-Medium.woff2"); /*URL to font*/
+}
+
+@font-face {
+    font-family: "Metropolis-regular"; /*a name to be used later*/
+    src: url("../fonts/Metropolis/WOFF2/Metropolis-Regular.woff2"); /*URL to font*/
+}
+
+@font-face {
+    font-family: "Metropolis-light"; /*a name to be used later*/
+    src: url("../fonts/Metropolis/WOFF2/Metropolis-Light.woff2"); /*URL to font*/
+}
+
+@font-face {
+    font-family: "Metropolis-extralight"; /*a name to be used later*/
+    src: url("../fonts/Metropolis/WOFF2/Metropolis-ExtraLight.woff2"); /*URL to font*/
+}
+
+@font-face {
+    font-family: "Metropolis-thin"; /*a name to be used later*/
+    src: url("../fonts/Metropolis/WOFF2/Metropolis-Thin.woff2"); /*URL to font*/
+}
+
+strong {
+    font-family: "Metropolis-Medium", sans-serif;
+}
+
+body {
+    font-family: "Metropolis-Regular", sans-serif;
+}
+
+#nav-main li a {
+    font-family: "Metropolis-Regular", sans-serif;
+    @include x("font-size", 15);
+    color: var(--color-white);
+}
+
+.roboto {
+    font-family: "Roboto", sans-serif;
+}
+
+.metropolis-thin {
+    font-family: "Metropolis-thin", sans-serif;
+}
+
+.metropolis-extralight {
+    font-family: "Metropolis-extralight", sans-serif;
+}
+
+.metropolis-light {
+    font-family: "Metropolis-light", sans-serif;
+}
+
+.metropolis {
+    font-family: "Metropolis-regular", sans-serif;
+}
+
+.metropolis-medium {
+    font-family: "Metropolis-bold", sans-serif;
+}
+
+.metropolis-bold {
+    font-family: "Metropolis-bold", sans-serif;
+}
+
+// body {
+//   @include x("font-size", 16);
+// }
+
+.fw-100 {
+    font-weight: 100;
+}
+
+.fw-300 {
+    font-weight: 300;
+}
+
+.fw-400 {
+    font-weight: 400;
+}
+
+.fw-600 {
+    font-weight: 600;
+}
+
+.fs-96 {
+    //font-family: "Metropolis-Regular", sans-serif;
+    font-size: 96px;
+
+    @include x("font-size", 96);
+}
+
+.fs-460 {
+    //font-family: "Metropolis-Regular", sans-serif;
+    font-size: 460px;
+
+    @include x("font-size", 460);
+}
+
+.fs-32 {
+    font-size: 32px;
+
+    @include x("font-size", 32);
+}
+
+.fs-24 {
+    font-size: 24px;
+
+    @include x("font-size", 24);
+}
+
+.fs-20 {
+    font-size: 20px;
+
+    @include x("font-size", 20);
+}
+
+.fs-16 {
+    font-size: 16px;
+
+    @include x("font-size", 16);
+}
+
+.fs-14 {
+    font-size: 14px;
+
+    @include x("font-size", 14);
+}
+
+.fs-button {
+    font-family: "Archivo", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 17px;
+    letter-spacing: 0.09em;
+
+    @include x("font-size", 16);
+    @include x("line-height", 17);
+}
+
+.font-medium {
+    font-size: 1vw;
+}
+
+.font-larger {
+    font-size: 5vw;
+
+    .one,
+    .two,
+    .three {
+        position: absolute;
+    }
+}
+
+.font-massive {
+    font-size: 15vw;
+    //transition: 600ms ease-out all 100ms;
+    line-height: 13vw;
+    position: relative;
+
+    width: 100%;
+
+    .one,
+    .two,
+    .three {
+        position: absolute;
+    }
+
+    .one {
+        left: -500px;
+        transition: 1200ms ease-out left 0s;
+        top: 0;
+        z-index: 10;
+    }
+
+    .two {
+        left: 200px;
+        transition: 600ms ease-out left 0.9s;
+        top: 15vw;
+        z-index: 2000;
+        opacity: 0.9;
+        //backdrop-filter: blur(6px);
+    }
+
+    .three {
+        left: -200px;
+        transition: 1200ms ease-out left 1s;
+        top: 30vw;
+        z-index: 10;
+    }
+}
