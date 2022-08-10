@@ -51,7 +51,9 @@ Alpine.store("theme", {
     init: () => {
         let theme = localStorage.getItem("theme");
 
-        document.documentElement.classList.add(theme.slice(1, -1));
+        if (theme) {
+            document.documentElement.classList.add(theme.slice(1, -1));
+        }
     },
 });
 
