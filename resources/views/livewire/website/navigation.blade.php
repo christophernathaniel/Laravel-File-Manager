@@ -127,13 +127,13 @@
                 <ul class="right">
                      <li>
                         <a href="#" @click="$store.darkMode.current = false; $store.darkMode.on()">
-                            <span class="toggle"  :class="$store.darkMode.current == false ? 'active' : 'no-active'"></span><span class="title"><span class="metropolis fs-16 fw-100">day</span><span class="metropolis fs-24 fw-600">light</span></span>
+                            <span class="toggle"  :class="$store.darkMode.current == false ? 'active' : 'no-active'"></span><span class="title"><span class="metropolis fs-16 fw-100">day</span><span class="metropolis fs-24 fw-400">light</span></span>
                         </a>
                          
                     </li>
                     <li>
                         <a href="#" @click="$store.darkMode.current = true; $store.darkMode.on()">
-                            <span class="toggle"  :class="$store.darkMode.current == true ? 'active' : 'no-active'"></span><span class="title"><span class="metropolis fs-16 fw-100">night</span><span class="metropolis fs-24 fw-600">dark</span></span>
+                            <span class="toggle"  :class="$store.darkMode.current == true ? 'active' : 'no-active'"></span><span class="title"><span class="metropolis fs-16 fw-100">night</span><span class="metropolis fs-24 fw-400">dark</span></span>
                         </a>
                     </li>
                 </ul>
