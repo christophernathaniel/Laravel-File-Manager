@@ -108,12 +108,12 @@
                 <ul class="right">
                      <li>
                         <a href="#" @click="$store.theme.current = 'space'; $store.theme.on()">
-                            <span class="toggle" :class="$store.theme.current == 'space' ? 'active' : 'no-active'"></span><span class="title"><span class="metropolis fs-16 fw-100">explorer</span><span class="metropolis fs-24 fw-600">developer</span></span>
+                            <span class="toggle" :class="$store.theme.current == 'space' ? 'active' : 'no-active'"></span><span class="title"><span class="metropolis fs-16 fw-100">explorer</span><span class="metropolis fs-24 fw-400">developer</span></span>
                         </a>
                     </li>
                     <li>
                         <a href="#" @click="$store.theme.current = 'ocean'; $store.theme.on()">
-                            <span class="toggle" :class="$store.theme.current == 'ocean' ? 'active' : 'no-active'"></span><span class="title"><span class="metropolis fs-16 fw-100">navigator</span><span class="metropolis fs-24 fw-600">designer</span></span>
+                            <span class="toggle" :class="$store.theme.current == 'ocean' ? 'active' : 'no-active'"></span><span class="title"><span class="metropolis fs-16 fw-100">navigator</span><span class="metropolis fs-24 fw-400">designer</span></span>
                         </a>
                     </li>
                 </ul>
