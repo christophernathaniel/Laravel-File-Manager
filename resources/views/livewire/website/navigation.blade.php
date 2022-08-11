@@ -102,7 +102,7 @@
             </ul>
 
             <div class="menu-persona-options">
-                <div class="left metropolis fs-24 fw-600">
+                <div class="left metropolis fs-24 fw-400">
                     Persona
                 </div>
                 <ul class="right">
@@ -121,7 +121,7 @@
 
 
             <div class="menu-darkmode-options">
-                <div class="left metropolis fs-24 fw-600">
+                <div class="left metropolis fs-24 fw-400">
                     Dark mode
                 </div>
                 <ul class="right">
