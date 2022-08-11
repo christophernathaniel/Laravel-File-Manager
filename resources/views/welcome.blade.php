@@ -18,7 +18,7 @@
                
              </div>
               <div class="man"></div>
-            <footer><div class="fs-24 fw-600 metropolis">developing.</div><div class="fs-24 fw-600 metropolis">designing.</div></footer>
+            <footer><div class="fs-24 fw-400 metropolis">developing.</div><div class="fs-24 fw-400 metropolis">designing.</div></footer>
         </section>
         <section class="block--0002 view-frame window-width" scroll-point>
 
@@ -32,7 +32,7 @@
                 <p class="fs-16 metropolis-thin fw-100 second">We believe having headspace to achieve your creative goals... Having worked with clients on web projects from ideation to launch, I have valuable experience in the design and development process.</p>
              </div>
 
-              <footer><div class="fs-24 fw-600 metropolis">creating.</div><div class="fs-24 fw-600 metropolis">programming.</div></footer>
+              <footer><div class="fs-24 fw-400 metropolis">creating.</div><div class="fs-24 fw-400 metropolis">programming.</div></footer>
         </section>
         <section class="block--0003 view-frame window-width can-intersect" scroll-point>
               <div class="title-space"  x-data x-show="$store.theme.current === 'space'">
@@ -61,7 +61,7 @@
                     <div class="code-block-2"></div>
                     <div class="code-block-3"></div>
                 </div>
-              <footer><div class="fs-24 fw-600 metropolis">creating.</div><div class="fs-24 fw-600 metropolis">programming.</div></footer>
+              <footer><div class="fs-24 fw-400 metropolis">creating.</div><div class="fs-24 fw-400 metropolis">programming.</div></footer>
         </section>
         <section class="block--0004 view-frame window-width can-intersect" scroll-point>
               <div class="title-space">
@@ -103,10 +103,10 @@
                         <p class="fs-16 metropolis-thin fw-100 third">We believe having headspace to achieve your creative goals... Having worked with clients on web projects from ideation to launch, I have valuable experience in the design and development process.</p>
                     </div>
               
-              <footer><div class="fs-24 fw-600 metropolis">creating.</div><div class="fs-24 fw-600 metropolis">programming.</div></footer>
+              <footer><div class="fs-24 fw-400 metropolis">creating.</div><div class="fs-24 fw-400 metropolis">programming.</div></footer>
         </section>
          <div class="block--0005 view-frame window-width" scroll-point>
-              <footer><div class="fs-24 fw-600 metropolis">creating.</div><div class="fs-24 fw-600 metropolis">programming.</div></footer>
+              <footer><div class="fs-24 fw-400 metropolis">creating.</div><div class="fs-24 fw-400 metropolis">programming.</div></footer>
         </div>
     </div>
 </x-website-layout>

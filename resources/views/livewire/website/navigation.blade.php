@@ -16,8 +16,8 @@
             <path d="M19.8867 53.0296L20.3567 53.9383L21.3661 54.1045L20.6471 54.8323L20.801 55.8437L19.8867 55.3848L18.9723 55.8437L19.1262 54.8323L18.4072 54.1045L19.4167 53.9383L19.8867 53.0296Z" />
         </svg>
         <div class="logo-text">
-            <span class="fs-24 fw-600 metropolis">creative</span>
-            <span class="fs-24 fw-600 metropolis">nebula</span>
+            <span class="fs-24 fw-400 metropolis">creative</span>
+            <span class="fs-24 fw-400 metropolis">nebula</span>
         </div>
     </div>
     <div x-data="{ open: false }">
