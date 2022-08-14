@@ -1,10 +1,16 @@
+$cssFileUrl: "http://xdev-files.test/";
+
+// @tailwind base;
+// @tailwind components;
+@tailwind utilities;
+
 @import "./variables/reset";
 @import "./variables/relative-unit";
+@import "./variables/responsive";
 @import "./variables/fonts";
 @import "./variables/colors";
 @import "./variables/frame";
 @import "./variables/btn";
-@import "./variables/responsive";
 
 @import "./atoms/navicon";
 @import "./atoms/switch";
@@ -20,6 +26,7 @@
 @import "./pages/homepage/block--0003";
 @import "./pages/homepage/block--0004";
 @import "./pages/homepage/block--0005";
+@import "./pages/homepage/block--0006";
 
 .hidden {
     display: none;

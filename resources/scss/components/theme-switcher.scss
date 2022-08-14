@@ -1,6 +1,6 @@
 .theme-switcher-modal {
     position: fixed;
-    z-index: 200;
+    z-index: 300;
     top: 0;
     left: 0;
     right: 0;
@@ -8,58 +8,98 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--color-white);
-    backdrop-filter: blur(10px);
+    color: var(--color-black);
+    backdrop-filter: blur(4px);
+    background-color: var(--color-white);
 
     .single-view {
         position: relative;
-        background-color: var(--color-ui-primary);
-        @include x("width", 1300);
-        @include x("min-height", 730);
-        @include x("border-radius", 12);
-        @include x("padding-top", 200);
-        @include x("padding-bottom", 40);
-        box-shadow: 0 23px 24px rgb(0 0 0 / 15%);
-
+        background-color: var(--color-white);
         display: flex;
         flex-direction: column;
         align-items: center;
     }
 
-    .title-block {
+    .setup-logo {
+        svg {
+            fill: var(--color-black);
+        }
+    }
+
+    .btn {
+        color: var(--color-white);
+        margin-top: 40px;
+    }
+
+    h2 {
         text-align: center;
-        @include x("margin-bottom", 50);
+    }
+
+    .item-group {
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+
+        .title {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    .toggle {
+        @include x("width", 34);
+        @include x("height", 34);
+        @include x("margin-right", 20);
+        @include x("border-radius", 34);
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--color-black);
+
+        &.active {
+            background-color: var(--color-fire-one);
+
+            &:after {
+                content: " ";
+                @include x("width", 24);
+                @include x("height", 24);
+                @include x("border-radius", 24);
+                background-color: var(--color-white);
+            }
+        }
     }
 
     .choice-group {
         display: flex;
-        @include x("gap", 20);
-    }
+        gap: 50px;
 
-    .preview {
-        @include x("width", 144);
-        @include x("height", 90);
-        @include x("border-radius", 12);
-        outline-width: 4px;
+        .space-choice,
+        .ocean-choice {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .preview {
+                display: block;
+                // height: 320px;
+                // width: 400px;
 
-        display: block;
-        background-color: var(--color-ui-white);
-    }
+                // @include x("height", 400);
+                // @include x("width", 500);
+                background-size: contain;
+            }
+        }
 
-    .name {
-        @include x("margin-top", 20);
-        text-align: center;
-        width: 100%;
-        display: block;
-    }
+        // .space-choice {
+        //     .preview {
+        //         background-image: url("#{$cssFileUrl}/storage/pages/space/rectangle.png");
+        //     }
+        // }
 
-    .btn.next {
-        @include x("margin-top", 40);
-    }
-
-    .btn.back {
-        position: absolute;
-        top: 20px;
-        left: 20px;
+        // .ocean-choice {
+        //     .preview {
+        //         background-image: url("#{$cssFileUrl}/storage/pages/navigator/rectangle.png");
+        //     }
+        // }
     }
 }

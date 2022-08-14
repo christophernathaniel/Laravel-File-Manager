@@ -5,6 +5,8 @@
     --color-white: #fff;
     --color-black: #000;
 
+    --color-off-white: #f1f1f1;
+
     --color-ui-primary: #31303d;
     --color-ui-secondary: #26252f;
     --color-ui-white: #fff;
@@ -57,6 +59,8 @@
             --color-tertiary: #000;
             --color-white: #000;
             --color-black: #fff;
+
+            --color-off-white: #171124;
         }
 
         &.ocean {
@@ -65,6 +69,8 @@
             --color-tertiary: #01081a;
             --color-white: #000;
             --color-black: #fff;
+
+            --color-off-white: #020c26;
         }
     }
 }

@@ -52,7 +52,7 @@ const scroller = {
 
                     if (elem.classList.contains("parallax-one")) {
                         elem.style.transform = `translateY(${
-                            scrollCalc * 1
+                            scrollCalc * 1.4
                         }px)`;
                     }
 

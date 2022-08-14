@@ -10,6 +10,13 @@
         @include x("bottom", 230);
         position: absolute;
         z-index: 0;
+        text-align: center;
+        opacity: 0;
+
+        @include sm-down() {
+            top: 100px;
+            z-index: 10;
+        }
     }
 
     .second {
@@ -18,6 +25,7 @@
         z-index: 10;
         @include x("max-width", 600);
         text-align: center;
+        opacity: 0;
     }
 }
 
@@ -25,7 +33,21 @@
     &.dark {
         .block--0002 {
             background-size: cover;
-            background-image: url("http://creativenebula.co.uk/storage/pages/space/starry-background.png");
+            background-image: url("#{$cssFileUrl}/storage/pages/space/starry-background.png");
+        }
+    }
+}
+
+.dl--7 {
+    .block--0002 {
+        .first {
+            opacity: 1;
+            transition: 600ms linear opacity 500ms;
+        }
+
+        .second {
+            opacity: 1;
+            transition: 600ms linear opacity 900ms;
         }
     }
 }

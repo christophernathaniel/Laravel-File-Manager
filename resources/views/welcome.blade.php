@@ -105,8 +105,50 @@
               
               <footer><div class="fs-24 fw-400 metropolis">creating.</div><div class="fs-24 fw-400 metropolis">programming.</div></footer>
         </section>
-         <div class="block--0005 view-frame window-width" scroll-point>
+        <section class="block--0005 view-frame window-width" scroll-point>
+            <div class="left">
+                <div class="section-space-1 section-space">
+                    <h2 class="fs-96 roboto fw-600">Development</h2>
+                    <p class="fs-16 metropolis">Donec ut diam sed nisi pulvinar faucibus. Praesent non enim sagittis, faucibus ex sed, sodales nisl. Duis sagittis convallis turpis sit amet auctor. Integer rutrum odio aliquam risus vehicula tristique. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi fringilla congue fermentum. Cras tristique ex vitae semper faucibus. Aenean leo nibh, gravida pretium urna sodales, vestibulum congue metus. Sed tempor libero enim, id interdum urna tempus ut. Fusce dapibus enim sapien, sed accumsan dui tempus et. Fusce ornare erat eu accumsan aliquet. Praesent vel urna pretium, gravida urna sed, pulvinar enim. Phasellus eros felis, hendrerit quis augue at, tincidunt viverra velit.</p>
+                </div>
+            </div>
+            <div class="right">
+                <div class="section-space-2 section-space">
+                    <h2 class="fs-96 roboto fw-600">Design</h2>
+                    <p class="fs-16 metropolis">Donec ut diam sed nisi pulvinar faucibus. Praesent non enim sagittis, faucibus ex sed, sodales nisl. Duis sagittis convallis turpis sit amet auctor. Integer rutrum odio aliquam risus vehicula tristique. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi fringilla congue fermentum. Cras tristique ex vitae semper faucibus. Aenean leo nibh, gravida pretium urna sodales, vestibulum congue metus. Sed tempor libero enim, id interdum urna tempus ut. Fusce dapibus enim sapien, sed accumsan dui tempus et. Fusce ornare erat eu accumsan aliquet. Praesent vel urna pretium, gravida urna sed, pulvinar enim. Phasellus eros felis, hendrerit quis augue at, tincidunt viverra velit.</p>
+                </div>
+                <div class="section-space-3 section-space">
+                    <h2 class="fs-96 roboto fw-600">UX</h2>
+                    <p class="fs-16 metropolis">Donec ut diam sed nisi pulvinar faucibus. Praesent non enim sagittis, faucibus ex sed, sodales nisl. Duis sagittis convallis turpis sit amet auctor. Integer rutrum odio aliquam risus vehicula tristique. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi fringilla congue fermentum. Cras tristique ex vitae semper faucibus. Aenean leo nibh, gravida pretium urna sodales, vestibulum congue metus. Sed tempor libero enim, id interdum urna tempus ut. Fusce dapibus enim sapien, sed accumsan dui tempus et. Fusce ornare erat eu accumsan aliquet. Praesent vel urna pretium, gravida urna sed, pulvinar enim. Phasellus eros felis, hendrerit quis augue at, tincidunt viverra velit.</p>
+                </div>
+            </div>
+        </section>
+         <section class="block--0006 view-frame window-width" scroll-point>
+
+             <div x-data class="title-space" x-show="$store.theme.current === 'space'">
+                <h2 class="fs-96 roboto fw-600 first">Lets build great things.</h2>
+                <p class="fs-16 metropolis-thin fw-100 second">
+                    We believe having headspace to achieve your creative goals... Having worked with clients on web projects from ideation to launch, I have valuable experience in the design and development process.
+                    <br><br>
+                    contact at <a href="mailto:hello@creativenebula.co.uk" class="roboto fw-600">hello@creativenebula.co.uk</a>
+                </p>
+                    
+                <div class="phone"></div>
+                <div class="laptop"></div>
+                <div class="world-background"></div>
+             </div>
+
+             <div x-data class="title-space" x-show="$store.theme.current === 'ocean'">
+                <h2 class="fs-96 roboto fw-600 first">Lets create great things.</h2>
+                <p class="fs-16 metropolis-thin fw-100 second">
+                    We believe having headspace to achieve your creative goals... Having worked with clients on web projects from ideation to launch, I have valuable experience in the design and development process. 
+                </p>
+                
+             </div>
+            
+              <div class="man"></div>
+              
               <footer><div class="fs-24 fw-400 metropolis">creating.</div><div class="fs-24 fw-400 metropolis">programming.</div></footer>
-        </div>
+        </section>
     </div>
 </x-website-layout>

@@ -2,6 +2,7 @@
     > div {
         display: flex;
         justify-content: center;
+        align-items: center;
         left: 0;
         right: 0;
     }
@@ -11,6 +12,13 @@
         @include x("top", 440);
         position: absolute;
         z-index: 0;
+        text-align: center;
+        transform: scale(10);
+
+        @include sm-down() {
+            top: 300px;
+            max-width: 380px;
+        }
     }
 
     .second {
@@ -20,6 +28,12 @@
         z-index: 10;
         @include x("max-width", 700);
         text-align: center;
+        opacity: 1;
+
+        @include sm-down() {
+            top: 490px;
+            max-width: 380px;
+        }
     }
 
     .third {
@@ -29,6 +43,11 @@
         z-index: 10;
         @include x("max-width", 600);
         text-align: center;
+
+        @include sm-down() {
+            top: 590px;
+            max-width: 380px;
+        }
     }
 }
 
@@ -39,7 +58,7 @@
     left: 50%;
     display: block;
     position: absolute;
-    background-image: url("http://creativenebula.co.uk/storage/pages/space/AlienSpaceship.svg");
+    background-image: url("#{$cssFileUrl}/storage/pages/space/AlienSpaceship.svg");
     background-size: contain;
 
     .speed-group {
@@ -57,7 +76,7 @@
         @include x("left", -386);
         @include x("top", 20);
         position: absolute;
-        background-image: url("http://creativenebula.co.uk/storage/pages/space/Speed1.svg");
+        background-image: url("#{$cssFileUrl}/storage/pages/space/Speed1.svg");
         background-repeat: no-repeat;
         background-size: contain;
     }
@@ -69,7 +88,7 @@
         @include x("left", -586);
         @include x("top", 90);
         position: absolute;
-        background-image: url("http://creativenebula.co.uk/storage/pages/space/Speed2.svg");
+        background-image: url("#{$cssFileUrl}/storage/pages/space/Speed2.svg");
         background-repeat: no-repeat;
         background-size: contain;
     }
@@ -81,7 +100,7 @@
         @include x("left", -586);
         @include x("top", 190);
         position: absolute;
-        background-image: url("http://creativenebula.co.uk/storage/pages/space/Speed3.svg");
+        background-image: url("#{$cssFileUrl}/storage/pages/space/Speed3.svg");
         background-repeat: no-repeat;
         background-size: contain;
     }
@@ -93,9 +112,23 @@
         @include x("left", -386);
         @include x("top", 240);
         position: absolute;
-        background-image: url("http://creativenebula.co.uk/storage/pages/space/Speed4.svg");
+        background-image: url("#{$cssFileUrl}/storage/pages/space/Speed4.svg");
         background-repeat: no-repeat;
         background-size: contain;
+    }
+}
+
+.dl--21 {
+    .block--0004 {
+        .first {
+            transition: 600ms linear transform 100ms;
+            transform: scale(1);
+        }
+
+        .second {
+            opacity: 1;
+            transition: 600ms linear opacity 900ms;
+        }
     }
 }
 

@@ -17,9 +17,13 @@
         }
 
         .first {
-            top: -20vh;
+            bottom: calc(50% - 40vh);
             position: absolute;
             z-index: 0;
+
+            @include sm-down() {
+                z-index: 10;
+            }
         }
 
         .second {
@@ -27,6 +31,10 @@
             position: absolute;
             z-index: 10;
         }
+    }
+
+    .man {
+        animation: MoveUpDown 8s ease-in-out infinite;
     }
 }
 
@@ -43,10 +51,14 @@
     transform: translateX(-50%) translateY(-50%);
     z-index: 5;
     position: fixed;
+
+    @include sm-down() {
+        height: 80vw;
+        width: 100vw;
+    }
 }
 
 .man {
-    animation: MoveUpDown 8s ease-in-out infinite;
     background-size: contain;
     background-repeat: no-repeat;
     height: 52vw;
@@ -58,6 +70,12 @@
     left: calc(50% - 100px);
     top: 15%;
     z-index: 6;
+
+    @include sm-down() {
+        width: 500px;
+        height: 500px;
+        left: 60%;
+    }
 }
 
 @keyframes MoveUpDown {
@@ -72,34 +90,34 @@
 
 .space {
     .triangle {
-        background-image: url("http://creativenebula.co.uk/storage/pages/space/rectangle.png");
+        background-image: url("#{$cssFileUrl}/storage/pages/space/rectangle.png");
     }
     .man {
-        background-image: url("http://creativenebula.co.uk/storage/pages/space/spaceman.png");
+        background-image: url("#{$cssFileUrl}/storage/pages/space/spaceman.png");
     }
     &.dark {
         body {
             background-color: var(--color-secondary);
         }
         .triangle {
-            background-image: url("http://creativenebula.co.uk/storage/pages/space/rectangle.png");
+            background-image: url("#{$cssFileUrl}/storage/pages/space/rectangle.png");
         }
     }
 }
 
 .ocean {
     .triangle {
-        background-image: url("http://creativenebula.co.uk/storage/pages/navigator/rectangle.png");
+        background-image: url("#{$cssFileUrl}/storage/pages/navigator/rectangle.png");
     }
     .man {
-        background-image: url("http://creativenebula.co.uk/storage/pages/navigator/diver.png");
+        background-image: url("#{$cssFileUrl}/storage/pages/navigator/diver.png");
     }
     &.dark {
         body {
             background-color: var(--color-secondary);
         }
         .triangle {
-            background-image: url("http://creativenebula.co.uk/storage/pages/navigator/rectangle.png");
+            background-image: url("#{$cssFileUrl}/storage/pages/navigator/rectangle.png");
         }
     }
 }
