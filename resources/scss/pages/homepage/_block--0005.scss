@@ -44,4 +44,32 @@
     p {
         @include x("max-width", 550);
     }
+
+    .icons {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: center;
+        max-width: 80%;
+        margin-top: 20px;
+
+        .icon {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            svg {
+                fill: var(--color-black);
+            }
+        }
+
+        .text {
+            margin-top: 10px;
+            font-size: 13px;
+            text-align: center;
+        }
+    }
 }

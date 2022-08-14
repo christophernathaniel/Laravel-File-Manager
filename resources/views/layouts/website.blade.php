@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="csrf-token" content="{{ csrf_token() }}">
 
-        <title>{{ config('app.name', 'Laravel') }}</title>
+        <title>Creative Nebula | Web App & Website Development | Design</title>
 
         <!-- Fonts -->
         {{-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap"> --}}
@@ -42,9 +42,11 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
+                
             }
             .loading-view svg { 
                 fill: #000;
+                max-width: 40%;
             }
         </style>
         <div class="loading-view">

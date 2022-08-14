@@ -20,12 +20,16 @@
     }
 
     .second {
-        @include x("bottom", 150);
+        @include x("bottom", 100);
         position: absolute;
         z-index: 10;
         @include x("max-width", 600);
         text-align: center;
         opacity: 0;
+
+        @include sm-down() {
+            bottom: 100px;
+        }
     }
 }
 
